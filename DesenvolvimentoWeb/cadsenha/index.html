@@ -1,0 +1,33 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="registerContainer">
+        <img src="user.png" alt="Logo do Usuário" class="logo">
+        <h1>Cadastro de Usuário</h1>
+        <form id="registerForm">
+            <input type="text" id="regUsername" placeholder="Nome de Usuário" required>
+            <input type="password" id="regPassword" placeholder="Senha de 6 dígitos" required pattern="\d{6}">
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p id="registerMessage"></p>
+    </div>
+    <div class="container" id="loginContainer" style="display: none;">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Nome de Usuário" required>
+            <input type="password" id="loginPassword" placeholder="Senha de 6 dígitos" required pattern="\d{6}">
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="loginMessage"></p>
+    </div>
+    <div class="container" id="welcomeContainer" style="display: none;">
+        <h1>Olá, tudo bem!!!</h1>
+        <p>Você entrou na minha página web. Seja bem-vindo!!!</p>
+        </div>
+</body>
+</html>
